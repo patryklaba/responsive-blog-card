@@ -1,0 +1,1 @@
+Responsive blog post card using CSS grid
