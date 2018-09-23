@@ -133,17 +133,14 @@ body {
 @media (min-width: 768px) {
   .post {
     max-width: 900px;
-  }
-
-  .post {
-    max-width: 900px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(min-content, 60px) 1fr;
+    grid-template-rows: 80px 1fr;
     box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
   }
   .thumbnail {
     top: 20px;
     left: -20px;
+    padding-top: 10px;
     grid-column: 1/2;
     grid-row: 2/3;
   }
@@ -176,5 +173,55 @@ body {
 
   .more {
     transform: translate(125%, 50%);
+  }
+}
+
+@media (min-width: 840px) {
+  .post {
+    padding: 0 30px;
+    max-height: 480px;
+    grid-gap: 15px;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: minmax(min-content, 350px) minmax(min-content, 100px);
+  }
+
+  .thumbnail {
+    grid-row: 1/2;
+    left: 0;
+    top: -30px;
+  }
+
+  .thumbnail > img {
+    max-height: 320px;
+  }
+
+  .details {
+    grid-row: 2/3;
+    margin: 0;
+    margin-top: -30px;
+  }
+
+.date h5 {
+    line-height: 2.5rem;
+    font-size: 3rem;
+  }
+
+  .date h6 {
+    font-size: 1.5rem;
+  }
+
+  .share ul {
+    min-width: 300px;
+  } 
+
+  .more {
+    transform: translate(175%, 150%);
+  }
+}
+
+@media (min-width: 1000px) {
+  .date h5 {
+    line-height: 5rem;
+    font-size: 4.5rem;
   }
 }
