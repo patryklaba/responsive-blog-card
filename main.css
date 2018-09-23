@@ -12,69 +12,64 @@ body {
   align-items: center;
 }
 
+.wrapper {
+  margin: 15px;
+  margin-bottom: 0;
+}
+
 .post {
-  margin: 100px 0;
-  background: #fff;
-  width: 86%;
+  margin: 75px auto;
+  max-width: 280px;
+  background-color: #fff;
+  box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
   display: grid;
 }
 
 .thumbnail {
-  position: relative;
-  top: -10px;
-  left: -10px;
+  width: 100%;
 }
 
-.thumbnail > img {
+.thumbnail img {
   width: 100%;
-  display: block;
-  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.4);
 
 }
 
 .details {
-  margin: 10px;
   display: flex;
   justify-content: space-between;
-}
-
-.date {
-  display: flex;
-  flex-direction: column;
+  color: #C3C3C3;
 }
 
 .date > * {
   margin: 0;
-  padding: 0 10px;
-  color : #C3C3C3;
+  text-align:center;
+
 }
 
 .date h5 {
-  font-size: 2rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .date h6 {
-  font-size: 1rem;
-  text-align: center;
   text-transform: uppercase;
+  font-size: 0.75rem;
 }
 
+.share {
+  align-self: center;
+}
 
-.share ul {
+.share > ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .share li {
   display: inline-block;
-  font-size: 0.75rem;
-  color: #C3C3C3;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.content-panel {
-  padding: 0 10px;
+  font-size: 0.7rem;
+  margin-left: 10px;
 }
 
 .content-panel h1 {
@@ -85,31 +80,28 @@ body {
 
 .author {
   font-size: 0.75rem;
-  font-style: italic;
   margin: 2px 0;
-  padding: 0 5px;
   color: #4B4B4B;
   font-weight: bold;
-  text-align: right;
 }
 
 .author::before {
-  content: "written by";
+  content: "author:";
   font-weight: normal;
   color: #9e9d9d;
 }
 
 .separator {
-  border : 1px solid #C3C3C3;
-  margin-top: 10px;
+  border : 1px solid rgba(75, 75, 75, .1);
+  margin: 10px 0;
 }
 
 .content-panel p {
   text-align: justify;
-	padding: 0 10px;
 	font-size : 0.95rem;
 	line-height: 150%;
-	color : #4B4B4B;
+  color : #4B4B4B;
+  margin: 5px;
 }
 
 .more {
@@ -128,6 +120,11 @@ body {
   cursor: pointer;
   font-size: 0.75rem;
 }
+/*
+
+
+
+
 
 
 @media (min-width: 768px) {
@@ -224,4 +221,4 @@ body {
     line-height: 5rem;
     font-size: 4.5rem;
   }
-}
+} */
